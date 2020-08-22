@@ -1,4 +1,4 @@
-fun sayHello(firstName: String, lastName:String){
+fun sayHello(firstName: String, lastName:String?){
     if(lastName==null) {
         println("Hello $firstName")
     }else{
@@ -6,7 +6,7 @@ fun sayHello(firstName: String, lastName:String){
     }
 }
 fun main() {
-    sayHello("Joko". "Anwar")
+    sayHello("Joko","Anwar")
     sayHello("Suparno", null)
     sayHello("Haji", "Sarkani")
 }
